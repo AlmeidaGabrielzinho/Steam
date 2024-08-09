@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="img/logo-steam.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">RPG</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Estratégia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Simulação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Esporte e corrida</a>
+        </li>
+      </ul>
+      <img src="img/logo-steam.png" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Steam</b></h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">RPG</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mundo aberto</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Estratégia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Esporte e corrida</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Biblioteca</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Carrinho</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre os melhores jogos aqui!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual jogo do seu interesse?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Destaques e recomendados</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/farcry6.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/reddeadredemption2.png"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/the-binding-of-isaac.png" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/elden-ring.png" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/tomb-raider.png" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/overcooked.png" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Forza Horizon 5</h2>
+            <p class="descrição__texto">
+              Explore um mundo aberto vibrante nas terras mexicanas com corridas divertidas e sem limites enquanto pilota os melhores carros do mundo.
+            </p>
+          </div>
+          <img src="img/forza-horizon-5.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Ofertas especiais</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="img/farmingsimulator22.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/cuphead.png" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/cyberpunk2077.png" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/godofwar.png" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/thewitcher3.png" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/raft.png" alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+
+        <div class="card__descrição">
+
+          <div class="descrição">
+            <h3 class="descrição__titulo">Jogo do mês</h3>
+            <h2 class="descrição__titulo-livro">Sniper Elite 4</h2>
+            <p class="descrição__texto">Descubra uma liberdade incomparável no maior e mais avançado jogo de tiro da Segunda Guerra já criado.
+            </p>
+          </div>
+
+          <img src="img/sniperelite4.png" class="descrição__imagem">
+        </div>
+
+
+        <div class="card__botões">
+
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">EXPLORE POR CATEGORIA</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">RPG</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">QUEBRA-CABEÇA</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">AÇÃO</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">ROMANCE VISUAL</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">SIMULAÇÃO</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">GRATUITOS PARA JOGAR</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">LUTA</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">MUNDO ABERTO</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Novos jogos, atualizações, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Steam</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Parceiras</li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-ea.png" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Eletronic Arts</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-epicgames.png" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Epic Games</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Jogos Destaques</li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-nfs.png" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">NFS</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-stardewvalley.png" alt="Logo da AluraParaEmpresas" />
+        <a href="#" class="lista-rodapé__link">Stardew Valley</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-gtav.png" alt="Logo da Alura Latam" />
+        <a href="#" class="lista-rodapé__link">Grand Theft Auto V</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-jc3.png" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">Just Cause 3</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-fifa22.png" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">FIFA 22</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-terraria.png" alt="Logo da Alura Lingua" />
+        <a href="#" class="lista-rodapé__link">Terraria</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-dayz.png" alt="Logo da PM3" />
+        <a href="#" class="lista-rodapé__link">DayZ</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Desenvolvedoras</li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-squareenix.png" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Square Enix</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-ubisoft.png" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Ubisoft</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-take-two.png" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Take-Two</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-crystaldynamics.png" alt="Logo do Like a Boss" />
+        <a href="#" class="lista-rodapé__link">Crystal Dynamics</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-netease.png" alt="Logo do Carreira sem fronteiras" />
+        <a href="#" class="lista-rodapé__link">NetEase</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-sony.png" alt="Logo do Hipsters ponto jobs" />
+        <a href="#" class="lista-rodapé__link">Sony</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo-tencent.png" alt="Logo do GUJ" />
+        <a href="#" class="lista-rodapé__link">Tencent</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
